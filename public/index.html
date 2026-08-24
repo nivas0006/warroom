@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WarRoom — AI Incident Response Team</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">🚨 <b>WarRoom</b><span class="sub">AI-native incident response team</span></div>
+  <div id="incident-banner" class="banner idle">No active incident</div>
+  <div class="controls">
+    <span id="backend-badge" class="badge">backend: —</span>
+    <button id="btn-start">Trigger incident</button>
+    <button id="btn-replay" class="ghost" title="Replay last recorded run">Replay</button>
+  </div>
+</header>
+
+<main>
+  <section class="col services">
+    <h2>Service Health <span class="hint">Kartify production</span></h2>
+    <div id="service-grid"></div>
+    <h2 style="margin-top:18px">Timeline</h2>
+    <div id="timeline"></div>
+  </section>
+
+  <section class="col feed">
+    <h2>Agent Activity <span id="live-dot" class="dot"></span></h2>
+    <div id="feed"></div>
+  </section>
+
+  <section class="col artifacts">
+    <h2>Human Approval Gate</h2>
+    <div id="patch-area"><div class="empty">Patches proposed by agents appear here for your approval.</div></div>
+    <h2 style="margin-top:18px">Customer Status Page</h2>
+    <div id="status-area"><div class="empty">The comms agent drafts the public update here.</div></div>
+    <h2 style="margin-top:18px">Postmortem</h2>
+    <div id="postmortem-area"><div class="empty">Generated when the incident resolves.</div></div>
+  </section>
+</main>
+<script src="/app.js"></script>
+</body>
+</html>

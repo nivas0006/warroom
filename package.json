@@ -1,0 +1,14 @@
+{
+  "name": "warroom",
+  "version": "1.0.0",
+  "description": "WarRoom — an AI-native autonomous incident response team, built on Claude",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.120.0"
+  }
+}
