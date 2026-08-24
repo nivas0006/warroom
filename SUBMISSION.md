@@ -30,5 +30,5 @@ I build agentic systems end-to-end, hands-on: a production voice agent for clini
 ## Links
 
 - **Demo video:** *(Loom link — to be added)*
-- **Code:** *(GitHub link — to be added after push)*
+- **Code:** https://github.com/nivas0006/warroom
 - **Run locally:** `npm install && node server.js` → http://localhost:4141
